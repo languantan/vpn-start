@@ -37,6 +37,8 @@ def main():
 
     connect_script = f'''
     tell application "Tunnelblick"
+        disconnect all
+
         connect "{vpn_server}"
         get state of first configuration where name = "{vpn_server}"
         repeat until result = "CONNECTED" or result = "EXITING"
