@@ -2,6 +2,7 @@
 easy python script that talks to Keychain to connect to Tunnelblick profiles that requires Open MFA standards.
 
 # Requirements
+- Python 3
 - `pip install pyotp`
 - Tunnelblick
 
